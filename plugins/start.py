@@ -5,9 +5,8 @@ from pyrogram import Client, Filters, StopPropagation, InlineKeyboardButton, Inl
 async def start(client, message):
     # return
     joinButton = InlineKeyboardMarkup([
-        [InlineKeyboardButton("Channel ⭕️", url="https://t.me/EKBOTZ_UPDATE")],
-        [InlineKeyboardButton(
-            "Support 🔰", url="https://t.me/ekbotz_support")]])
-    welcomed = f"Hey <b>{message.from_user.mention}</b>\nI am YouTube dl bot.\n\n**I Can Download YouTube Videos By Link, Send Me A Link To See That Magic.**\n**Hit /help for get an idea.\n\n**Join @EKBOTZ_UPDATE**"
+        [InlineKeyboardButton("🤖 Update Channel", url="https://t.me/BX_Botz"),
+        [InlineKeyboardButton("👥Support Group", url="https://t.me/BxSupport")]])
+    welcomed = f"Hai <b>{message.from_user.mention}</b>\n\n`Iam simple YouTube downloader bot. I Will Convert Youtube Link to Video/File & Mp3`.\n\n`For more details Press` /help.\n\n👲 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : [ʙx ʙᴏᴛᴢ](https://t.me/BX_Botz)"
     await message.reply_text(welcomed, reply_markup=joinButton)
     raise StopPropagation
